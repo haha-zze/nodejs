@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http响应练习</title>
+</head>
+<body>
+
+<style>
+    td {
+        padding: 20px 40px;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #aef;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #fcb;
+    }
+
+    table, td {
+        border-collapse: collapse;
+    }
+</style>
+
+
+<table border="1">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<script>
+    let tds = document.querySelectorAll('td')
+    tds.forEach(v => {
+        v.onclick = function () {
+            this.style.backgroundColor = '#222'
+        }
+    })
+</script>
+</body>
+</html>
