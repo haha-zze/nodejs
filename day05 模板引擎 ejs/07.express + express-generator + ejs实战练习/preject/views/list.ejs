@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是列表文件</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+<h1>这是列表文件</h1>
+
+<% list.forEach(item=>{ %>
+    <div class="box">
+        <p>名称：<%= item.name %></p>
+        <p>金额：<%= item.account %>元</p>
+        <p >类型：
+           <span class="<%= item.type == 1 ? 'success' : 'danger'%>">
+               <% if(item.type == 1) { %>
+                   收入
+               <% } else { %>
+                   支出
+               <% } %>
+           </span>
+        </p>
+        <a href="/delete/<%= item.id %>">
+            x
+        </a>
+    </div>
+<% }) %>
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    margin:200px 500px;
+}
+
+h1 {
+    color: #00B7FF;
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+
+}
+
+p {
+    width: 300px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffccbb;
+    color: #600b52;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.success {
+    font-weight: 700;
+    color: darkgreen;
+}
+
+.danger {
+    font-weight: 700;
+    color: red;
+}
